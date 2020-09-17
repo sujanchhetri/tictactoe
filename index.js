@@ -8,7 +8,7 @@ var rooms = 0;
 app.use(express.static('.'));
 
 app.get('/', function (req, res) {
-res.sendFile(__dirname + '/game.html');
+res.sendFile(__dirname + '/index.html');
 });
 
 io.on('connection', (socket) => {
